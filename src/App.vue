@@ -1,22 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h3>Arithmetic Calculator with Vue</h3>
+    <Calculator />
+    <br />
+    <span>
+      <strong>Made with <span class="heart">♥</span> by <a href="http://fantasticfoluwa.me">MORONFOLUWA</a></strong>
+    </span>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Calculator from './components/Calculator.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Calculator
   }
 }
 </script>
 
 <style>
+a{
+  text-decoration: none;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +31,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.heart {
+  color: #f00;
+  font-size: 30px;
 }
 </style>
